@@ -1,0 +1,15 @@
+name: "googler-rsu-decision-agent"
+region: "us-east1"
+base_template: "adk_python"
+language: "python"
+framework: "google-adk"
+create_params:
+  root_agent_name: "googler_rsu_decision_agent"
+  app_name: "app"
+  deployment_target: "agent_runtime"
+  cicd_runner: "github_actions"
+  is_a2a: true
+  agent_gateway: false
+  agent_guidance_filename: "GEMINI.md"
+  agent_runtime:
+    identity_default: "agent_identity"
